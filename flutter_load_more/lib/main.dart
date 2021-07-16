@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView.builder(
         controller: _scrollController,
-        itemExtent: 80,
+        itemExtent: 75, // How long space between item if all item not fill all screen
         itemBuilder: (context, index) {
           if (index == dummyList.length) {
             return CupertinoActivityIndicator();
